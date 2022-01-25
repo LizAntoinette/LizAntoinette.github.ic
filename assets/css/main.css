@@ -49,6 +49,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#prog-name{
+	color: #ffa7eb;
+}
+
 #contact{
 	margin: 3em auto 8em auto;
 }
