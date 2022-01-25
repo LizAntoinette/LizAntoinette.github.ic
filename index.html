@@ -210,22 +210,12 @@
 							<h2>Get in touch</h2>
 							<p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
 							<div class=" style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field">
-												<label for="subject">Subject</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field ">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
+								<section id="contact">
+									
 										<ul class="actions">
-											<li><button onclick="sendMail(); return false" class="button submit">Send Message</button></li>
+											<li><a href="mailto:lizanguren12@gmail.com" class="button submit">Send Message</a></li>
 										</ul>
-									</form>
+							
 								</section>
 								
 							</div>
@@ -255,11 +245,11 @@
 			<script>
 				function sendMail() {
 					var link = "mailto:lizanguren12@gmail.com"
-							+ "?subject=" + encodeURIComponent("This is my subject")
+							+ "?subject=" + encodeURIComponent(document.getElementById('name ').value)
 							+ "&body=" + encodeURIComponent(document.getElementById('message').value)
 					;
 					
-					window.location.href = link;
+					window.open(link);
 				}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>

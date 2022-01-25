@@ -49,7 +49,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+#contact{
+	margin: 3em auto 8em auto;
+}
 #skill, .row, .col-sm {
     display: inline;
     margin: auto;
